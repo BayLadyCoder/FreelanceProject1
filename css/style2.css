@@ -75,8 +75,8 @@ p{
 
 .mainContent {
 	padding: 10px 50px;
-	display: flex;
-	justify-content: center;
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
 
 hr {
@@ -187,6 +187,11 @@ a.navbar-brand {
 }*/
 
 .showcase-one {
+	display: block;
+
+}
+
+.showcase-column {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
