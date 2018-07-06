@@ -12,20 +12,33 @@ h1,h2,h3,h4,h5,h6,a{
 	color: #2c6ccc;
 }
 
-h3 {
+h2 {
 	/*color: #fff;*/
+	font-weight: bold;
+	/*font-size: 16px;*/
+}
+
+.imgContent {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px 20px 0px;
 }
 
 p{
   font-family:Roboto;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #6694c4;
   color: #9d9fa0;
+  color: #86888c;
   text-indent: 20px;
   /*letter-spacing: 0.5px;*/
   line-height: 1.6;
   text-align: justify;
+}
+
+.mainContent {
+	padding: 10px 50px;
 }
 
 hr {
@@ -35,7 +48,8 @@ hr {
 
 #contentContainer {
 	width: 900px;
-	padding: 20px 0px 40px 0px;
+	padding: 20px 30px 40px 30px;
+	background-color: rgba(226, 226, 226, 0.2);
 }
 
 .navTopContainer {
