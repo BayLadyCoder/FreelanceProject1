@@ -24,6 +24,38 @@ h2 {
 	padding: 10px 0px 20px 0px;
 }
 
+.tenTypes {
+	font-family:Poppins;
+	color: black;
+	cursor: pointer;
+	font-size: 19px;
+}
+
+.tenTypes:hover {
+	font-size: 20px;
+	/*background-color: #fff;*/
+	text-decoration: underline;
+}
+
+.tenTypesContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+}
+
+.tenTypesTextBox {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 40px;
+	background-color: #e0ebfc;
+	-ms-align-self: center;
+	align-self: center;
+}
+
 p{
   font-family:Roboto;
   font-weight: 400;
@@ -39,6 +71,8 @@ p{
 
 .mainContent {
 	padding: 10px 50px;
+	display: flex;
+	justify-content: center;
 }
 
 hr {
@@ -148,6 +182,11 @@ a.navbar-brand {
 	z-index: 100;
 }*/
 
+.showcase-one {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 #showcase {
 	margin: 10px 0px;
