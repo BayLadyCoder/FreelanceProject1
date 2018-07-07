@@ -86,8 +86,11 @@ p{
 }
 
 hr {
-	background-color: rgba(44, 108, 204, 0.5);
-	height: 1px;
+	margin-top: 40px;
+	background-color: #86888c;
+	height: 2px;
+	width: 100%;
+	opacity: 0.5;
 }
 
 #contentContainer {
