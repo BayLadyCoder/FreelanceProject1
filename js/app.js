@@ -1,3 +1,3 @@
 $(".tenTypes").click(function() {
-	$(this).next().toggleClass( "open" );
+	$(this).next().toggleClass("open");
 });  

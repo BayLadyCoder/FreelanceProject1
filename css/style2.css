@@ -8,6 +8,10 @@ h1,h2,h3,h4,h5,h6,a{
   color: #444444;
 }
 
+h3 {
+	line-height: 1.4;
+}
+
 .h2-blue {
 	color: #2c6ccc;
 }
@@ -61,6 +65,11 @@ h2 {
 	-ms-align-self: center;
 	align-self: center;
 	display: none;
+	-webkit-transition: display 2s ease-in;
+	   -moz-transition: display 2s ease-in;
+	    -ms-transition: display 2s ease-in;
+	     -o-transition: display 2s ease-in;
+	        transition: display 2s ease-in;
 }
 
 
@@ -70,6 +79,11 @@ h2 {
 }
 .open {
 	display: flex;
+	-webkit-transition: display 2s ease-in;
+	   -moz-transition: display 2s ease-in;
+	    -ms-transition: display 2s ease-in;
+	     -o-transition: display 2s ease-in;
+	        transition: display 2s ease-in;
 }
 
 p{
