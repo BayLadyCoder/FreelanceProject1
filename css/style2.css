@@ -60,10 +60,16 @@ h2 {
 	background-color: #e0ebfc;
 	-ms-align-self: center;
 	align-self: center;
+	display: none;
 }
+
+
 
 .tenTypesText {
 	color: #6d6d6d;
+}
+.open {
+	display: flex;
 }
 
 p{
@@ -78,6 +84,12 @@ p{
   line-height: 1.6;
   text-align: justify;
 }
+
+.noIndent {
+	text-indent: 0px;
+	font-size: 13px;
+}
+
 
 .mainContent {
 	padding: 10px 50px;
