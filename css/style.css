@@ -8,12 +8,30 @@ h1,h2,h3,h4,h5,h6,a{
   color: #444444;
 }
 
+.extraContainer {
+	display: flex;
+	justify-content: center;
+}
+
 h2 a:hover {
 	text-decoration: none;
+	color: #2c6ccc;
 }
 
 .h2-blue {
 	color: #2c6ccc;
+}
+
+.h2-blue:hover {
+	color: #2c6ccc;
+	border: dashed 2px #2c6ccc;
+	padding: 5px 20px;
+	border-radius: 30px;
+
+}
+
+.h2text {
+	margin-bottom: 15px;
 }
 
 h3 {
@@ -172,11 +190,38 @@ a.navbar-brand {
 	margin-bottom: 15px;
 }
 
+#resources {
+	/*margin: 10px;*/
+	/*border-right: 1px dashed rgba(44, 108, 204, 0.5);*/
+	/*border-left: 1px solid rgba(44, 108, 204, 0.5);*/
+	margin-bottom: 20px;
+}
+
 .imgMDPlans {
 	width: 90%;
+	
 	margin-left: 30px;
 	border-radius: 10px;
 	box-shadow: 8px 8px 10px #aaaaaa;
+}
+
+#resourcesImg {
+	width: 50%;
+	margin-top: 10px;
+	/*height: 100%;*/
+	/*margin-left: 30px;*/
+	border-radius: 10px;
+	/*box-shadow: 8px 8px 10px #aaaaaa;*/
+}
+
+#seminarsImg {
+	width: 30%;
+	margin-top: 20px;
+	margin-bottom: 3.25%;
+	/*height: 100%;*/
+	/*margin-left: 30px;*/
+	border-radius: 10px;
+	/*box-shadow: 8px 8px 10px #aaaaaa;*/
 }
 
 input, textarea {

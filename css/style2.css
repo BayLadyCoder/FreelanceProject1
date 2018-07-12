@@ -22,6 +22,11 @@ h2 {
 	/*font-size: 16px;*/
 }
 
+h2 a:hover {
+	text-decoration: none;
+	color: #2c6ccc;
+}
+
 .imgContent {
 	display: flex;
 	justify-content: center;
@@ -99,7 +104,7 @@ h2 {
 .resourcesLink:hover {
 	text-decoration: none;
 	font-size: 25px;
-	color: blue;
+	color: #2c6ccc;
 }
 
 p{
@@ -265,7 +270,7 @@ a.navbar-brand {
 	font-weight: 500;
 	border: rgba(8, 178, 79, 0.8) solid 1px;
 	color: #2c6ccc;
-	margin-right: 20px;
+	
 	border: rgba(44, 108, 204, 0.8) solid 1px;
 	/*transition: background-color 0.3s;*/
 }
