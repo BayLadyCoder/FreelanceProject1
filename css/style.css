@@ -132,12 +132,14 @@ a.navbar-brand {
 	margin: 10px 0px;
 }
 
+
+
 .showcase-btn {
 	color: #07ba52;
 	font-weight: 500;
 	border: rgba(8, 178, 79, 0.8) solid 1px;
 	color: #2c6ccc;
-	
+	align-self: center;
 	border: rgba(44, 108, 204, 0.8) solid 1px;
 	/*transition: background-color 0.3s;*/
 }
