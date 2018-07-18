@@ -224,6 +224,10 @@ a.navbar-brand {
 	/*box-shadow: 8px 8px 10px #aaaaaa;*/
 }
 
+form {
+	width: 400px;
+}
+
 input, textarea {
 	border: #abc3e8 solid 1px !important;
 	color: #2c6ccc;
@@ -243,6 +247,29 @@ label {
 .form-control::-moz-placeholder { color: rgba(44, 108, 204, 0.5); }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: rgba(44, 108, 204, 0.5); }  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: rgba(44, 108, 204, 0.5); }  /* Microsoft Edge */
+
+
+.form-control {
+	/*background: transparent;*/
+	/*border: none;*/
+	/*outline: none;*/
+	/*border-bottom: 1px solid #2c6ccc;*/
+	/*box-shadow: none;*/
+}
+
+
+
+.grouping {
+	/*display: flex;
+	justify-content: center;*/
+}
+
+#contactName {
+	width: 175px;
+}
+#contactPhone {
+	width: 125px;
+}
 
 .btn-submit {
 		background-color: rgba(44, 108, 204, 0.9);
@@ -277,9 +304,10 @@ label {
 	flex-direction: column;
 	background-color: #878787;
 	background-color: rgba(44, 108, 204, 0.9);
-	width: 40%;
+	width: 35%;
 	color: #fff;
 	border-radius: 20px;
+
 }
 
 h3#h3Contact {
@@ -292,6 +320,56 @@ h3#h3Contact {
 	margin-bottom: 15px;
 	font-size: 15px;
 	font-family:Poppins;
+}
+
+textarea.form-control {
+	height: auto;
+}
+
+.width100 {
+	width: 100%;
+	
+}
+
+i {
+	font-size: 18px;
+	
+}
+
+#contactEmail {
+	width: 372px;
+}
+#contactMessage {
+	width: 372px;
+}
+
+label {
+
+	text-align: right;
+	clear: both;
+    float:left;
+    margin-right:  10px;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+textarea {
+	margin: 0;
+	width: 80%;
+}
+
+input {
+	display: block;
+	width: 100%;
+
+}
+.form-group {
+	width: 100%;
+}
+
+.form-group {
+	display: flex;
+	justify-content: space-between;
 }
 
 footer{
