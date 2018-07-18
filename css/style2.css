@@ -3,6 +3,10 @@ margin-top: 55px;
 
 }
 
+/*.NavContainer {
+    width: 900px;
+ }*/
+
 h1,h2,h3,h4,h5,h6,a{
   font-family:Poppins;
   color: #444444;
@@ -306,6 +310,13 @@ a.navbar-brand {
 	box-shadow: 8px 8px 10px #aaaaaa;
 }
 
+form {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
 input, textarea {
 	border: #abc3e8 solid 1px !important;
 	color: #2c6ccc;
@@ -331,12 +342,23 @@ label {
 		color: white;
 		border: white 1px solid;
 		font-size: 16px;
+
+		align-self: flex-end;
+		width: 30%;
+		text-align: center;
 }
 
 .btn-submit:hover {
 		background-color: rgba(44, 108, 204, 1);
 		color: white;
 		font-size: 17px;
+}
+
+#contactName {
+	width: 175px;
+}
+#contactPhone {
+	width: 125px;
 }
 
 #contact {
@@ -380,6 +402,61 @@ label {
 	font-family:Poppins;
 }
 
+textarea.form-control {
+	height: auto;
+}
+
+.width100 {
+	width: 100%;
+	
+}
+
+i {
+	font-size: 18px;
+	
+}
+
+#contactEmail {
+	width: 372px;
+}
+#contactMessage {
+	width: 372px;
+}
+
+label {
+	color: #2c6ccc;
+	text-align: right;
+	clear: both;
+    float:left;
+    margin-right:  10px;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+textarea {
+	margin: 0;
+	width: 80%;
+}
+
+input {
+	display: block;
+	width: 100%;
+
+}
+.form-group {
+	width: 100%;
+}
+
+.form-group {
+	display: flex;
+	justify-content: space-between;
+}
+
 footer{
   padding-top:10px;
+}
+
+
+#copyrightText {
+	color: #9d9fa0;
 }

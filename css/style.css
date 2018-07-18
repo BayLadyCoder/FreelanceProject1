@@ -224,8 +224,16 @@ a.navbar-brand {
 	/*box-shadow: 8px 8px 10px #aaaaaa;*/
 }
 
+/*.NavContainer {
+    width: 900px;
+ }*/
+
 form {
 	width: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
 }
 
 input, textarea {
@@ -238,10 +246,6 @@ input:focus, textarea:focus {
 	color: #2c6ccc;
 }
 
-label {
-	color: #2c6ccc;
-}
-
 .form-control::-webkit-input-placeholder { color: rgba(44, 108, 204, 0.5); }  /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder { color: rgba(44, 108, 204, 0.5); }  /* Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: rgba(44, 108, 204, 0.5); }  /* Mozilla Firefox 19+ */
@@ -250,19 +254,10 @@ label {
 
 
 .form-control {
-	/*background: transparent;*/
-	/*border: none;*/
-	/*outline: none;*/
-	/*border-bottom: 1px solid #2c6ccc;*/
-	/*box-shadow: none;*/
+
+	color: #2c6ccc;
 }
 
-
-
-.grouping {
-	/*display: flex;
-	justify-content: center;*/
-}
 
 #contactName {
 	width: 175px;
@@ -276,6 +271,10 @@ label {
 		color: white;
 		border: white 1px solid;
 		font-size: 16px;
+		
+		align-self: flex-end;
+		width: 30%;
+		text-align: center;
 }
 
 .btn-submit:hover {
@@ -344,7 +343,7 @@ i {
 }
 
 label {
-
+	color: #2c6ccc;
 	text-align: right;
 	clear: both;
     float:left;
