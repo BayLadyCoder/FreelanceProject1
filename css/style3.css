@@ -516,10 +516,10 @@ label {
 }
 
 #contactName2 {
-	width: 400px;
+	width: 430px;
 }
 #contactPhone2 {
-	width: 400px;
+	width: 430px;
 }
 
 #contact {
@@ -575,10 +575,10 @@ i {
 }
 
 #contactEmail2 {
-	width: 400px;
+	width: 430px;
 }
 #contactMessage2 {
-	width: 400px;
+	width: 430px;
 }
 
 label {
@@ -634,17 +634,17 @@ footer{
 	width: 100%;
 	justify-content: center;
 	-ms-align-items: center;
-	align-items: center;
+	align-items: space-between;
 	align-self: center;
 }
 
 #contactPageForm {
 	width: 100%;
-	margin-top: 30px;
-	height: 500px;
+	margin-top: 20px;
+	height: 450px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-direction: column;
-	align-items: center;
+	align-items: space-between;
 }
 
