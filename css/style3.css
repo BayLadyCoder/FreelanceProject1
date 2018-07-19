@@ -515,12 +515,7 @@ label {
 		font-size: 17px;
 }
 
-#contactName2 {
-	width: 430px;
-}
-#contactPhone2 {
-	width: 430px;
-}
+
 
 #contact {
 	padding: 20px 0px;
@@ -542,7 +537,7 @@ label {
 	flex-direction: column;
 	background-color: #878787;
 	background-color: rgba(44, 108, 204, 0.9);
-	width: 40%;
+	width: 50%;
 	color: #fff;
 	border-radius: 20px;
 }
@@ -559,7 +554,7 @@ label {
 #contact p {
 	color: #fff;
 	margin-bottom: 15px;
-	font-size: 15px;
+	font-size: 18px;
 	font-family:Poppins;
 }
 
@@ -574,11 +569,18 @@ i {
 	
 }
 
+#contactName2 {
+	width: 60%;
+}
+#contactPhone2 {
+	width: 60%;
+}
+
 #contactEmail2 {
-	width: 430px;
+	width: 60%;
 }
 #contactMessage2 {
-	width: 430px;
+	width: 60%;
 }
 
 label {
@@ -624,7 +626,7 @@ footer{
 }
 
 
-#copyrightText {
+p #copyrightText {
 	color: #9d9fa0;
 }
 

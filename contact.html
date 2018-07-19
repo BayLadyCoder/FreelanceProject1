@@ -49,7 +49,7 @@
                 <li><a href="seminars.html">Seminars</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
         
           </ul>
@@ -69,20 +69,20 @@
                 <div class="form-group form-group2">
                   <div class="width100p2">
                     <label><i class="fas fa-user"></i> </label>
-                    <input id="contactName2" class="form-control" type="text" name="" value="" placeholder="Enter Name">
+                    <input id="contactName2" class="form-control" type="text" name="" value="" placeholder="Enter Name" required autofocus>
                   </div>
                 </div>
                 <div class="form-group form-group2">
                   <div class="width100p2">
                     <label><i class="fas fa-phone"></i> </label>
-                    <input id="contactPhone2" class="form-control" type="text" name="" value="" placeholder="Phone Number">
+                    <input id="contactPhone2" class="form-control" type="tel" name="" value="" placeholder="Phone Number" required>
                   </div>
                 </div>
 
                 <div class="form-group form-group2">
                   <div class="width100p2">
                     <label><i class="far fa-envelope"></i> </label>
-                    <input id="contactEmail2" class="form-control" type="text" name="" value="" placeholder="Enter Email">
+                    <input id="contactEmail2" class="form-control" type="email" name="" value="" placeholder="Enter Email" required>
                   </div>
                 </div>
                 
@@ -90,7 +90,7 @@
                   <div class="width100p2">
                     <!-- <label>Message: </label> -->
                     <label for="message"> <i class="far fa-comment"></i></label>
-                    <textarea id="contactMessage2" class="form-control form-control2" name="" value="" placeholder="Enter Message"></textarea>
+                    <textarea id="contactMessage2" class="form-control form-control2" name="" value="" placeholder="Enter Message" required></textarea>
                   </div>
                 </div>
                 <div class="form-group form-group2">
@@ -111,39 +111,8 @@
     <section id="contact">
           <div class="container">
             <div class="row contactFooterContainer">
-              <div class="col-md-6 col-sm-6">
-                <form>
-                  <div class="form-group">
-                    <div class="grouping">
-                    <label><i class="fas fa-user"></i> </label>
-                    <input id="contactName" class="form-control" type="text" name="" value="" placeholder="Enter Name">
-                    </div>
-                    <div>
-                    <label><i class="fas fa-phone"></i> </label>
-                    <input id="contactPhone" class="form-control" type="text" name="" value="" placeholder="Phone Number">
-                    </div>
-                  </div>
-                  
-                  <div class="form-group">
-                    <div class="width100">
-                    <label><i class="far fa-envelope"></i> </label>
-                    <input id="contactEmail" class="form-control" type="text" name="" value="" placeholder="Enter Email">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    
-                  </div>
-                  <div class="form-group">
-                    <div class="width100">
-                    <!-- <label>Message: </label> -->
-                    <label for="message"> <i class="far fa-comment"></i></label>
-                    <textarea id="contactMessage" class="form-control" name="" value="" placeholder="Enter Message"></textarea>
-                  </div>
-                  </div>
-                  <button class="btn btn-submit">Submit</button>
-                </form>
-              </div>
-              <div class="col-md-6 col-sm-6 contactInfo">
+              
+              <div class="col-md-8 col-sm-8 contactInfo">
                 <h3 id="h3Contact">Contact Info</h3>
                 <p class="eachContactInfo"><i class="fas fa-phone"></i> 443-699-8593</p>
                 <p class="eachContactInfo"><i class="far fa-envelope"></i> info@healthcarebaltimore.com</p>
@@ -155,7 +124,7 @@
         </section>
 
     <footer id="footer">
-      <p class="text-center">Healthcare Baltimore Copyright &copy; 2018</p>
+      <p id="copyrightText" class="text-center">Healthcare Baltimore Copyright &copy; 2018</p>
     </footer>
 
     <script
