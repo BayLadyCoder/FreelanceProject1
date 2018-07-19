@@ -139,7 +139,7 @@ p{
 
 
 .mainContent {
-	padding: 10px 50px;
+	padding: 30px 50px;
 	/*display: flex;*/
 	/*justify-content: center;*/
 }
@@ -650,3 +650,6 @@ p #copyrightText {
 	align-items: space-between;
 }
 
+#contactUs {
+	color: #2c6ccc;
+}
