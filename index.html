@@ -4,58 +4,43 @@
     <meta charset="utf-8">
     <title>Healthcare Baltimore</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container navTopContainer NavContainer">
-        <div class="navbar-header">
+    <div class="navTopContainer">
+      <nav>
+        <p>
+          <a href="index.html">Healthcare Baltimore</a>
+        </p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Under 65</a>
+            <ul class="dropdownMenu">
+              <li class="under65"><a href="individualHealthInsurance.html">Individual Healthcare</a></li>
+              <li class="under65"><a href="groupHealthInsurance.html">Group Healthcare</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Medicare</a>
+            <ul class="dropdownMenu">
+              <li><a href="medicareSupplementPlan.html">Medicare Supplement Plans</a></li>
+              <li><a href="medicareAdvantagePartC.html">Medicare Advantage (Part C)</a></li>
+            </ul>
+          </li>
+          <li><a href="lifeInsurance.html">Life Insurance</a></li>
+          <li><a href="#">More Info</a>
+            <ul class="dropdownMenu">
+              <li class="moreInfo"><a href="resources.html">Resources</a></li>
+              <li class="moreInfo"><a href="seminars.html">Seminars</a></li>
+            </ul>
+          </li>
+          <li><a id="navBarContact" href="contact.html">Contact</a></li>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-		
-          <a class="navbar-brand" href="index.html">Healthcare Baltimore</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Under 65 <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="individualHealthInsurance.html">Individual Healthcare</a></li>
-                <li><a href="groupHealthInsurance.html">Group Healthcare</a></li>
-              </ul>
-            </li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Medicare <span class="caret"></span></a>
-			  <ul class="dropdown-menu">
-			    <li><a href="medicareSupplementPlan.html">Medicare Supplement Plans</a></li>
-			    <li><a href="medicareAdvantagePartC.html">Medicare Advantage(Part C)</a></li>
-			  </ul>
-			</li>
-            <li><a href="lifeInsurance.html">Life Insurance</a></li>
-            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Info <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="seminars.html">Seminars</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-
-        
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+        </ul>
+      </nav>
+    </div>
 	<div class="container">
     <div class="jumbotron">
       <h1>Welcome!</h1>
@@ -68,21 +53,23 @@ We are available year-round 7 days a week serving our customers.</p>
 
     <section class="showcase" id="sectionMDPlans">
       <div class="container">
+        <div class="wholeSection">
         <div class="row" id="showcase-left-container">
-          <div class="col-md-4 col-sm-4 col-xs-12" >
-            <div class="showcase-left" >
-              <a href="medicareSupplementPlan.html"><img class="imgMDPlans" src="./img/85.jpeg"></a>
+          <div class="col-30" >
+            <div class="showcase-left imgContainer" >
+              <a href="medicareSupplementPlan.html"><img class="imgMDPlans2" src="./img/85.jpeg"></a>
             </div>
           </div>
-          <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="col-70">
             <div class="showcase-right">
               <h2><a href="medicareSupplementPlan.html">Medicare Supplement Plans</a></h2>
               <h4 class="text-capitalize">medicare supplement insurance (Medi-Gap)</h4>
               <p class="text-justify">Medi-Gap is supplemental insurance to cover some of the “gaps” that Original Medicare (Medicare Parts A and B) does not cover. Medicare out-of-pocket costs can include deductibles, copayments, and coinsurance.
 Medi-Gap policies are standardized by the federal government, and sold by private insurance companies. The benefits offered in every Medi-Gap policy are standardized by the Federal Government, and can be easily compared between carriers.</p>
+<a class="showcase-btn" href="medicareSupplementPlan.html">More Info <i class="fas fa-chevron-right"></i></a>
             </div>
             
-            <a class="btn btn-default btn-sm showcase-btn" href="medicareSupplementPlan.html">More Info <i class="fas fa-chevron-right"></i></a>
+            
           </div>
         </div>
         <hr>
@@ -92,26 +79,27 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
 
         <section class="showcase" id="sectionMDAdvantage">
           <div class="container">
+            <div class="wholeSection">
             <div class="row" id="showcase-left-container">
               
-              <div class="col-md-8 col-sm-8 col-xs-12">
-                <div class="showcase-right">
+              <div class="col-70">
+                <div class="showcase-left">
                   <h2><a href="medicareAdvantagePartC.html">Medicare Advantage (Part C)</a></h2>
                   
-                  <p class="text-justify">Medicare Advantage plans “MA” (aka “Part C”) are Medicare-approved private insurance plans that enable you to choose an HMO or PPO Health insurance plan. These plans typically are simple, all-inclusive plans that include and provide all the benefits of Medicare A, B, and usually D, as well as preventive health care benefits.</p>
-
-                  <p class="text-justify">
-                  	Additional benefits covered by “MA” that original Medicare does not cover may include: coverage while traveling outside the U.S.; long-term care; routine eye care; most dental care; dentures; hearing examinations; routine foot care; alternative medicine (acupuncture and chiropractic); long-term or custodial care; medical maintenance services; non-medical services such as in-room tv, telephone, and copies of x-rays; and the choice between HMO’s and PPO’s.
-                  	 
+                  <p>Medicare Advantage plans “MA” (aka “Part C”) are Medicare-approved private insurance plans that enable you to choose an HMO or PPO Health insurance plan. These plans typically are simple, all-inclusive plans that include and provide all the benefits of Medicare A, B, and usually D, as well as preventive health care benefits.
                   </p>
+
+                  <p>
+                  	Additional benefits covered by “MA” that original Medicare does not cover may include: coverage while traveling outside the U.S.; long-term care; routine eye care; most dental care; dentures; hearing examinations; routine foot care; alternative medicine (acupuncture and chiropractic); long-term or custodial care; medical maintenance services; non-medical services such as in-room tv, telephone, and copies of x-rays; and the choice between HMO’s and PPO’s.
+                  </p>
+
+                  <a class="btn btn-default btn-sm showcase-btn" href="medicareAdvantagePartC.html">More Info <i class="fas fa-chevron-right"></i></a>
                 </div>
-                
-                <a class="btn btn-default btn-sm showcase-btn" href="medicareAdvantagePartC.html">More Info <i class="fas fa-chevron-right"></i></a>
               </div>
 
-              <div class="col-md-4 col-sm-4 col-xs-12" >
-                <div class="showcase-left" >
-                  <a href="medicareAdvantagePartC.html"><img class="imgMDPlans" src="./img/happySeniors.jpg"></a>
+              <div class="col-30" >
+                <div class="showcase-right imgContainer" >
+                  <a href="medicareAdvantagePartC.html"><img class="imgMDPlans2" src="./img/happySeniors.jpg"></a>
                 </div>
               </div>
             </div>
@@ -120,49 +108,55 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
         </section>
 
 
-            <section class="showcase" id="sectionLifeInsurance">
-              <div class="container">
-                <div class="row" id="showcase-left-container">
-                  <div class="col-md-5 col-sm-5 col-xs-12" >
-                    <div class="showcase-left" >
-                      <a href="lifeInsurance.html"><img class="imgMDPlans" src="./img/happyFamily.jpg"></a>
-                    </div>
-                  </div>
-                  <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="showcase-right">
-                      <h2><a href="lifeInsurance.html">Life Insurance</a></h2>
-                      <p class="text-justify">Plans have changed, the rates have changed, and your needs may have changed.</p>
-                      <p class="text-justify">
-                      	We will help you compare all of your options, and find the right plan for you.
-                      </p>
-                    </div>
-                    
-                    <a class="btn btn-default btn-sm showcase-btn" href="lifeInsurance.html">More Info <i class="fas fa-chevron-right"></i></a>
-                  </div>
+        <section class="showcase" id="sectionLifeInsurance">
+          <div class="container">
+            <div class="wholeSection">
+            <div class="row">
+              <div class="col-30" >
+                <div class="showcase-left imgContainer" >
+                  <a href="lifeInsurance.html"><img class="imgMDPlans" src="./img/happyFamily.jpg"></a>
                 </div>
-                <hr>
               </div>
-            </section>
+              <div class="col-70">
+                <div class="showcase-right">
+                  <h2><a href="lifeInsurance.html">Life Insurance</a></h2>
+                  <p>Plans have changed, the rates have changed, and your needs may have changed.</p>
+                  <p>
+                   We will help you compare all of your options, and find the right plan for you.
+                 </p>
+                 <a class="showcase-btn" href="lifeInsurance.html">More Info <i class="fas fa-chevron-right"></i></a>
+               </div>
+             </div> 
+           </div>
+           <hr>
+         </div>
+       </div>
+   </section>
 
     <section class="showcase" id="sectionMDAdvantage">
       <div class="container">
+         <div class="wholeSection">
         <div class="row" id="showcase-left-container">
           
-          <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="col-70">
             <div class="showcase-right">
               <h2>Health Insurance</h2>
               
               <p class="text-justify">We are proud to represent health plans offered by Philadelphia American Insurance Company and New Era Health Plans. Our agency specializes in alternatives to traditional Major Medical which for many is not available or not affordable. Our NON Obamacare plans offer you Freedom of Choice, simple and transparent design and the ability to customize the policy to fit your needs budget.</p>
+              
+              <div class="groupingBtn">
+                <a class="btn btn-default btn-sm showcase-btn" href="individualHealthInsurance.html">Individual <i class="fas fa-chevron-right"></i></a>
+              <a class="btn btn-default btn-sm showcase-btn" href="groupHealthInsurance.html">Group <i class="fas fa-chevron-right"></i></a>
+              </div>
             </div>
             
-              <a class="btn btn-default btn-sm showcase-btn" href="individualHealthInsurance.html">Individual <i class="fas fa-chevron-right"></i></a>
-              <a class="btn btn-default btn-sm showcase-btn" href="groupHealthInsurance.html">Group <i class="fas fa-chevron-right"></i></a>
+            
             
           </div>
 
-          <div class="col-md-4 col-sm-4 col-xs-12" >
-            <div class="showcase-left" >
-              <img class="imgMDPlans" src="./img/adultsHappy.jpg">
+          <div class="col-30" >
+            <div class="showcase-left imgContainer" >
+              <img class="imgMDPlans2" src="./img/adultsHappy.jpg">
             </div>
           </div>
         </div>
@@ -171,29 +165,28 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
     </section>
 
     <section class="showcase" id="sectionThreeColumns">
+      <div class="wholeSection">
       <div class="container">
-        <div class="row extraContainer" >
+        <div class="row" >
           
-              <div class="col-md-6 col-sm-6 col-xs-12" id="resources">
+              <div class="col-50" id="resources">
                 <div class="showcase-left">
-                  <h2 class="text-center h2text"><a href="resources.html" class="h2-blue"><i class="fas fa-info-circle"></i> Resources</a></h2>
-                  <!-- <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illum exercitationem minima itaque quae unde cum magnam earum sit voluptates culpa nobis modi iste eveniet error, sint quas saepe nisi.</p> -->
-                  
+                  <h2 class="h2text"><a href="resources.html" class="h2-blue"><i class="fas fa-info-circle"></i> Resources</a></h2>
+
                   <a href="resources.html" class="showcase-container">
-                    <img id="resourcesImg" src="./img/resources4.png" alt="">
+                    <img id="resourcesImg" src="./img/resources4.png" alt="Books">
                   </a>
-                  
-                  <!-- <hr> -->
+
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-12" id="seminars">
+              <div class="col-50" id="seminars">
                 <div class="showcase-left" >
-                  <h2 class="text-center h2text"><a href="seminars.html" class="h2-blue"><i class="far fa-calendar-alt"></i> Seminars</a></h2>
-                  <!-- <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illum exercitationem minima itaque quae unde cum magnam earum sit voluptates culpa nobis modi iste eveniet error, sint quas saepe nisi.</p> -->
+                  <h2 class="h2text"><a href="seminars.html" class="h2-blue"><i class="far fa-calendar-alt"></i> Seminars</a></h2>
+
                   <a href="seminars.html" class="showcase-container">
-                  <img id="seminarsImg" src="./img/seminars5.png" alt="">
+                  <img id="seminarsImg" src="./img/seminars5.png" alt="Calendar">
                   </a>
-                  <!-- <hr> -->
+                 
                 </div>
               </div>
             </div>
@@ -207,17 +200,17 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
 
     <section id="contact">
       <div class="container">
-        <div class="row contactFooterContainer">
-          <div class="col-md-6 col-sm-6">
-            <form>
+        <div class="contactFooterContainer">
+            <div class="formContainer">
+            <form class="info-left">
               <div class="form-group">
                 <div class="grouping">
-                <label><i class="fas fa-user"></i> </label>
-                <input id="contactName" class="form-control" type="text" name="" value="" placeholder="Enter Name">
+                  <label><i class="fas fa-user"></i> </label>
+                  <input id="contactName" class="form-control" type="text" name="" value="" placeholder="Enter Name">
                 </div>
-                <div>
-                <label><i class="fas fa-phone"></i> </label>
-                <input id="contactPhone" class="form-control" type="text" name="" value="" placeholder="Phone Number">
+                <div class="grouping">
+                  <label><i class="fas fa-phone"></i> </label>
+                  <input id="contactPhone" class="form-control" type="text" name="" value="" placeholder="Phone Number">
                 </div>
               </div>
               
@@ -227,9 +220,7 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
                 <input id="contactEmail" class="form-control" type="text" name="" value="" placeholder="Enter Email">
                 </div>
               </div>
-              <div class="form-group">
-                
-              </div>
+              
               <div class="form-group">
                 <div class="width100">
                 <!-- <label>Message: </label> -->
@@ -240,7 +231,7 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
               <button class="btn btn-submit">Submit</button>
             </form>
           </div>
-          <div class="col-md-6 col-sm-6 contactInfo">
+          <div class="contactInfo info-right">
             <h3 id="h3Contact">Contact Info</h3>
             <p class="eachContactInfo"><i class="fas fa-phone"></i> 443-699-8593</p>
             <p class="eachContactInfo"><i class="far fa-envelope"></i> info@healthcarebaltimore.com</p>
@@ -252,7 +243,7 @@ Medi-Gap policies are standardized by the federal government, and sold by privat
     </section>
 
     <footer id="footer">
-      <p id="copyrightText" class="text-center">Healthcare Baltimore Copyright &copy; 2018</p>
+      <p id="copyrightText">Healthcare Baltimore Copyright &copy; 2018</p>
     </footer>
 
     <script
