@@ -114,18 +114,30 @@ nav ul li ul li a:hover {
 	background-color: #154c99;
 }
 
+nav ul li a i {
+	font-size: 12px;
+}
+
 .under65 {
 	width: 200px;
 }
 
 .moreInfo {
-	width: 114px;
+	width: 125px;
+}
+
+
+.container {
+	width: 1170px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
 
 
-
-
+/* - -- - - -- -   Main Content - - -- ---- - - - - -*/
 
 h1,h2,h3,h4,h5,h6,a{
   font-family:Poppins;
@@ -191,6 +203,7 @@ p{
   margin-bottom: 10px;
   text-align: justify;
   /*text-indent: 20px;*/
+
 }
 
 hr {
@@ -199,13 +212,7 @@ hr {
 	width: 100%;
 }
 
-.container {
-	width: 1170px;
-	padding: 0px 15px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-}
+
 
 .jumbotron {
 	/*padding: 100px 20px;*/
@@ -409,6 +416,10 @@ h2 a i {
 
 /*  --  - --  --  FOOTER -- - - - -- -  -- */
 
+
+.col-50 {
+	width: 50%;
+}
 form {
 	height: 200px;
 	width: 350px;
@@ -517,11 +528,9 @@ input:focus, textarea:focus {
 
 }
 
-/*.info-leftm, .info-right {
-	width: 100%;
-}*/
 
-h3#h3Contact {
+#h3Contact {
+	margin-top: 0px;
 	margin-bottom: 10px;
 	color: #fff;
 }
@@ -539,19 +548,13 @@ textarea.form-control {
 
 .width100 {
 	width: 100%;
-	
 }
 
 i {
 	font-size: 18px;
-	
 }
 
 
-/*.grouping {
-	display: flex;
-	justify-content: space-between;
-}*/
 
 #contactName {
 	width: 80%;
@@ -577,7 +580,6 @@ label {
     margin-right:  10px;
     margin-bottom: 0;
     margin-top: 7px;
-
 }
 
 
@@ -586,7 +588,6 @@ input {
 	justify-content: space-between;
 	width: auto;
 	margin: 0;
-
 }
 
 .form-group {
@@ -597,13 +598,14 @@ input {
 
 
 footer{
-  padding-top:10px;
+  padding: 5px 0px;
   display: flex;
   justify-content: center;
 }
 
 #copyrightText {
 	color: #9d9fa0;
+	margin: 0px;
 }
 
 
