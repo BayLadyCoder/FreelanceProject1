@@ -40,29 +40,46 @@ nav {
 	justify-content: space-between;	
 }
 
+#brand {
+	height: 100%;
+}
+
 nav p a{
 	text-decoration: none;
 	color: #fff;
 	float: left;
-	line-height: 55px;
+	line-height: 1.5;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family:Poppins;
 	font-weight: 400;
   	font-size: 18px;
+	height: 100%;
+}
+
+.desktopView {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
 
 }
 
-nav ul {
-	float: left;
+
+.active {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
 }
 
-nav ul li {
-	float: left;
+nav ul li  {
 	list-style: none;
-	position: relative;
 }
+
 
 nav ul li a {
 	display: block;
@@ -74,14 +91,12 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-	text-decoration: none;
+	
 	color: #fff;
 }
 
-nav ul li ul {
+.hide {
 	display: none;
-	position: absolute;
-    border-radius: 0px 0px 10px 10px;
     padding: 0;
 	border: none;
 }
@@ -90,16 +105,17 @@ nav ul li:hover {
 	background-color: #154c99;
 }
 
-nav ul li:hover ul {
-	display: block;
-	background-color: #154c99;
- 	border-radius: 0px 0px 10px 10px;
+nav ul li ul {
+	
+	border-radius: 0px 0px 10px 10px;
 
 }
 
 nav ul li ul li {
-	width: 250px;
-	border-radius: 4px;
+	width: auto;
+	display: block;
+
+	
 }
 
 nav ul li ul li a{
@@ -107,7 +123,7 @@ nav ul li ul li a{
 	text-align: center;
 	background-color: #2c6ccc;
 	font-size: 15px;
-	border-radius: 4px;
+	display: block;
 }
 
 nav ul li ul li a:hover {
@@ -118,22 +134,117 @@ nav ul li a i {
 	font-size: 12px;
 }
 
-.under65 {
+#under65 {
+	width: 125px;
+	height: 100%;
+}
+
+.under65List {
 	width: 200px;
 }
 
-.moreInfo {
-	width: 125px;
+#medicare {
+	width: 130px;
+	height: 100%;
+}
+
+.medicareList {
+	width: 250px;
+}
+
+#moreInfo {
+	width: 130px;
+	height: 100%;
+}
+
+.moreInfoList {
+	width: 130px;
 }
 
 
 .container {
 	width: 1170px;
-	padding: 0px 10px;
+	padding: 0px 15px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 }
+
+.toggle {
+	width: 100%;
+	padding: 10px 10px;
+	background-color: #2c6ccc;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+.show {
+	display: block;
+	
+
+	background-color: #154c99;
+ 	border-radius: 0px 0px 10px 10px;
+	
+}
+
+
+/*  - - - --- - -- - -- - - - - - Responsive Design --- - - - - - - - - - - - - - -- - */
+
+@media only screen and (max-width: 768px) {
+
+	.toggle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.toggle a {
+		text-decoration: none;
+		color: #fff;
+		float: left;
+		line-height: 1.5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family:Poppins;
+		font-weight: 400;
+	  	font-size: 18px;
+		height: 100%;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		width: 100%;
+	}
+
+	.desktopView
+	{
+		display: none;
+	}
+
+	#brand {
+		display: none;
+	}
+
+	.active {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: auto;
+	}
+}
+
+/*- - - - --  - - --  -- Main Content -- - -- - - -- - -*/
 
 h1,h2,h3,h4,h5,h6,a{
   font-family:Poppins;

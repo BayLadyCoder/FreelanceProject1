@@ -11,36 +11,41 @@
 </head>
 <body>
   <div class="navTopContainer">
-    <nav>
-      <p>
-        <a href="index.html">Healthcare Baltimore</a>
-      </p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Under 65 <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdownMenu">
-            <li class="under65"><a href="individualHealthInsurance.html">Individual Healthcare</a></li>
-            <li class="under65"><a href="groupHealthInsurance.html">Group Healthcare</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Medicare <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdownMenu">
-            <li><a href="medicareSupplementPlan.html">Medicare Supplement Plans</a></li>
-            <li><a href="medicareAdvantagePartC.html">Medicare Advantage (Part C)</a></li>
-          </ul>
-        </li>
-        <li><a href="lifeInsurance.html">Life Insurance</a></li>
-        <li><a href="#">More Info <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdownMenu">
-            <li class="moreInfo"><a href="resources.html">Resources</a></li>
-            <li class="moreInfo"><a href="seminars.html">Seminars</a></li>
-          </ul>
-        </li>
-        <li><a id="navBarContact" href="contact.html">Contact</a></li>
+        <nav>
+          
+          <p id="brand">
+            <a href="index.html">Healthcare Baltimore</a>
+          </p>
+          <div class="toggle">
+            <a href="index.html">Healthcare Baltimore</a>
+            <i class="fas fa-bars menu"></i>
+          </div>
+          <ul class="desktopView">
+            <li><a href="index.html">Home</a></li>
+            <li id="under65" class="nestedMenu"><a href="#">Under 65 <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdownMenu hide">
+                <li class="under65List"><a href="individualHealthInsurance.html">Individual Healthcare</a></li>
+                <li class="under65List"><a href="groupHealthInsurance.html">Group Healthcare</a></li>
+              </ul>
+            </li>
+            <li id="medicare" class="nestedMenu"><a href="#">Medicare <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdownMenu hide">
+                <li class="medicareList"><a href="medicareSupplementPlan.html">Medicare Supplement Plans</a></li>
+                <li class="medicareList"><a href="medicareAdvantagePartC.html">Medicare Advantage (Part C)</a></li>
+              </ul>
+            </li>
+            <li><a href="lifeInsurance.html">Life Insurance</a></li>
+            <li id="moreInfo" class="nestedMenu"><a href="#">More Info <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdownMenu hide">
+                <li class="moreInfoList"><a href="resources.html">Resources</a></li>
+                <li class="moreInfoList"><a href="seminars.html">Seminars</a></li>
+              </ul>
+            </li>
+            <li><a id="navBarContact" href="contact.html">Contact</a></li>
 
-      </ul>
-    </nav>
-  </div>
+          </ul>
+        </nav>
+      </div>
 
   <section id="showcase">
     <div class="container" id="contentContainer">
@@ -359,6 +364,23 @@
       });
     });
   </script>
+
+  <script>
+      $(document).ready(function() {
+
+          $('.menu').click(function() {
+              $('.desktopView').toggleClass('active');
+          });
+   
+      });
+    </script>
+
+    <script>
+      $('.nestedMenu').click(function() {
+
+        $(this).children('ul').toggleClass('show');
+      });
+    </script>
 
   <script src="./js/app.js">
   </script>
