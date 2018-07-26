@@ -2,12 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Healthcare Baltimore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="./css/style2.css">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>Healthcare Baltimore</title>
   </head>
   <body>
     <div class="navTopContainer">
@@ -172,84 +171,8 @@ When shopping for Medicare Advantage plans “MA” Part C, you need to verify i
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal('.showcase-one', {
-        duration: 1000,
-        origin:'bottom'
-      });
-      sr.reveal('.navbar', {
-        duration: 1000,
-        origin:'bottom'
-      });
-      sr.reveal('.showcase-left', {
-        duration: 2000,
-        origin:'top',
-        distance:'300px'
-      });
-      sr.reveal('.showcase-right', {
-        duration: 2000,
-        origin:'right',
-        distance:'300px'
-      });
-      sr.reveal('.showcase-btn', {
-        duration: 2000,
-        delay: 2000,
-        origin:'bottom'
-      });
-      sr.reveal('#testimonial div', {
-        duration: 2000,
-        origin:'bottom'
-      });
-      sr.reveal('.info-left', {
-        duration: 2000,
-        origin:'left',
-        distance:'300px',
-        viewFactor: 0.2
-      });
-      sr.reveal('.info-right', {
-        duration: 2000,
-        origin:'right',
-        distance:'300px',
-        viewFactor: 0.2
-      });
-    </script>
-
-    <script>
-      $(function() {
-      // Smooth Scrolling
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
-  <script>
-      $(document).ready(function() {
-
-          $('.menu').click(function() {
-              $('.desktopView').toggleClass('active');
-          });
-   
-      });
-    </script>
-
-    <script>
-      $('.nestedMenu').click(function() {
-
-        $(this).children('ul').toggleClass('show');
-      });
-    </script>
+    <script src="./js/app.js"></script>
   
 </body>
 </html>

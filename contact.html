@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Healthcare Baltimore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="./css/style3.css">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title>Healthcare Baltimore</title>
   </head>
   <body>
  <div class="navTopContainer">
@@ -55,24 +55,31 @@
             <div class="showcase-one">
               <h2 id="contactUs">Contact Us</h2>
               <div class="formContainer2">
-              <form id="contactPageForm">
+              <form id="contactPageForm" action="./php/contact2.php" enctype="multipart/form-data" method="POST">
+                
+                <input type="hidden" name="sendtoemail" value="test@healthcarebaltimore.com">
+                <input type='hidden' name='cgiemail-mailopt' value='sync' />
+                
+                <input type="hidden" name="subject" value="HealthcareBaltimore.com - Contact Form" />
+                <input type="hidden" name="redirect" value="http://www.healthcarebaltimore.com" />
+
                 <div class="form-group form-group2">
                   <div class="width100p2">
                     <label><i class="fas fa-user"></i> </label>
-                    <input id="contactName2" class="form-control" type="text" name="" value="" placeholder="Enter Name" required autofocus>
+                    <input id="contactName2" class="form-control" type="text" name="name" value="" placeholder="Enter Name" required autofocus>
                   </div>
                 </div>
                 <div class="form-group form-group2">
                   <div class="width100p2">
                     <label><i class="fas fa-phone"></i> </label>
-                    <input id="contactPhone2" class="form-control" type="tel" name="" value="" placeholder="Phone Number" required>
+                    <input id="contactPhone2" class="form-control" type="tel" name="phone" value="" placeholder="Phone Number" required>
                   </div>
                 </div>
 
                 <div class="form-group form-group2">
                   <div class="width100p2">
                     <label><i class="far fa-envelope"></i> </label>
-                    <input id="contactEmail2" class="form-control" type="email" name="" value="" placeholder="Enter Email" required>
+                    <input id="contactEmail2" class="form-control" type="email" name="email" value="" placeholder="Enter Email" required>
                   </div>
                 </div>
                 
@@ -80,12 +87,14 @@
                   <div class="width100p2">
                     <!-- <label>Message: </label> -->
                     <label for="message"> <i class="far fa-comment"></i></label>
-                    <textarea id="contactMessage2" class="form-control form-control2" name="" value="" placeholder="Enter Message" required></textarea>
+                    <textarea id="contactMessage2" class="form-control form-control2" name="message" value="" placeholder="Enter Message" required></textarea>
                   </div>
                 </div>
                 <div class="form-group form-group2">
-                <button class="btn btn-submit">Submit</button>
+                <button type="submit" value="Send Message" class="btn btn-submit">Submit</button>
                 </div>
+                
+                
               </form>
               </div>
             </div>
@@ -121,54 +130,8 @@
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal('.showcase-one', {
-        duration: 1000,
-        origin:'bottom'
-      });
-      sr.reveal('.navbar', {
-        duration: 1000,
-        origin:'bottom'
-      });
-    </script>
-
-    <script>
-      $(function() {
-      // Smooth Scrolling
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
-
-  <script>
-      $(document).ready(function() {
-
-          $('.menu').click(function() {
-              $('.desktopView').toggleClass('active');
-          });
-   
-      });
-    </script>
-
-    <script>
-      $('.nestedMenu').click(function() {
-
-        $(this).children('ul').toggleClass('show');
-      });
-    </script>
+    
+  <script src="./js/app.js"></script>
 
   
 </body>
