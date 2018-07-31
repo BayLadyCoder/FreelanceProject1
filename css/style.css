@@ -85,7 +85,7 @@ nav p a{
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
-
+	width: auto;
 }
 
 
@@ -111,6 +111,9 @@ nav p a{
 
 nav ul li  {
 	list-style: none;
+	height: 100%;
+	/*display: flex;
+	justify-content: center;*/
 }
 
 
@@ -138,17 +141,13 @@ nav ul li:hover {
 	background-color: #154c99;
 }
 
-nav ul li ul {
-	
+nav ul li ul {	
 	border-radius: 0px 0px 10px 10px;
-
 }
 
 nav ul li ul li {
 	width: auto;
 	display: block;
-
-	
 }
 
 nav ul li ul li a{
@@ -194,6 +193,34 @@ nav ul li a i {
 	width: 130px;
 }
 
+/**/
+/*
+#under65 {
+	width: auto;
+	height: 100%;
+}
+
+.under65List {
+	width: auto;
+}
+
+#medicare {
+	width: auto;
+	height: 100%;
+}
+
+.medicareList {
+	width: auto;
+}
+
+#moreInfo {
+	width: auto;
+}
+
+.moreInfoList {
+	width: auto;
+}
+*/
 
 .container {
 	width: 1170px;
@@ -207,15 +234,6 @@ nav ul li a i {
 	        justify-content: center;
 }
 
-/*#displayNone {
-	display: none;
-}*/
-
-/*.toggle {
-   height: 0;
-   visibility: hidden;
-   width: 0;
-}*/
 
 .toggle {
 	width: 100%;
@@ -231,15 +249,111 @@ nav ul li a i {
 
 .show {
 	display: block;
-	
-
 	background-color: #154c99;
  	border-radius: 0px 0px 10px 10px;
-	
 }
 
 
 /*  - - - --- - -- - -- - - - - -NavBar Responsive Design --- - - - - - - - - - - - - - -- - */
+
+@media only screen and (max-width: 1200px) {
+
+	.navTopContainer {
+	 	padding: 0% 5%;
+	 }
+
+	nav p a, nav ul li a, nav ul li ul li a{
+		/*width: 100%;*/
+	  	font-size: 15px;
+		height: 100%;
+		/*padding: 10px 16px;*/
+	}
+
+	nav ul li ul li {
+		width: 100%;
+
+	}
+
+	nav ul li ul li a{
+		font-size: 14px;
+		/*padding: 0;*/
+		width: 100%;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	#under65 {
+		width: 119px;
+	}
+
+	.under65List {
+		width: 180px;
+	}
+
+	#medicare {
+		width: 125px;
+	}
+
+	.medicareList {
+		width: 235px;
+	}
+
+	#moreInfo {
+		width: 125px;
+		height: 100%;
+	}
+
+	.moreInfoList {
+		width: 125px;
+		height: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 1000px) {
+	.navTopContainer {
+	 	padding: 0% 2%;
+	 }
+	
+	nav {
+		height: 43px;
+	}
+	 
+
+	 nav ul li a {
+	/*	font-size: 15px;*/
+		padding: 10px 14px;
+		/*display: flex;
+		justify-content: center;*/
+	}
+
+	#under65 {
+		width: 110px;
+	}
+
+	.under65List {
+		width: 180px;
+	}
+
+	#medicare {
+		width: 110px;
+	}
+
+	.medicareList {
+		width: 240px;
+	}
+
+	#moreInfo {
+		width: 110px;
+	}
+
+	.moreInfoList {
+		width: 110px;
+	}
+}
+
 
 @media only screen and (max-width: 600px) {
 
