@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	$('.menu').click(function() {
 		$('.desktopView').toggleClass('active');
+		$('.toggle').toggleClass('underlineNavTop');
 		
 	});
 
