@@ -1419,3 +1419,40 @@ footer{
 	}
 
 }
+
+@media only screen and (max-width: 620px) {
+	form {
+		height: 200px;
+		width: 100%;
+	}
+
+	.contactInfo {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+
+	.form-control, #copyrightText {
+		font-size: 12px;
+	}
+
+	.btn-submit {
+		font-size: 14px;
+	}
+
+	.contactInfo {
+		padding: 10px;
+	} 
+
+	#h3Contact {
+		font-size: 16px;
+	}
+
+	.contactContainer p, .contactContainer i {
+		font-size: 13px;
+	}
+
+
+}
