@@ -112,8 +112,6 @@ nav p a{
 nav ul li  {
 	list-style: none;
 	height: 100%;
-	/*display: flex;
-	justify-content: center;*/
 }
 
 
@@ -194,17 +192,7 @@ nav ul li a i {
 }
 
 
-.container {
-	width: 1170px;
-	padding: 0px 15px;
-	margin: 0 auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
+
 
 
 .toggle {
@@ -593,11 +581,27 @@ hr {
 	width: 100%;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
+.container {
+	width: 1170px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
 
 .jumbotron {
-	/*padding: 100px 20px;*/
-	width: 1140px;
+	padding: 100px 20px;
+	width: 100%;
 
 	border-radius: 6px;
 	padding: 70px 60px;
@@ -696,9 +700,16 @@ hr {
 }
 
 
-#showcase {
-	margin: 0px 0px;
-	padding: 0;
+.showcase {
+	width: 1170px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 
@@ -847,6 +858,152 @@ h2 a i {
 }
 
 
+/*  - - - --- - -- - -- - - - - -NavBar Responsive Design --- - - - - - - - - - - - - - -- - */
+
+@media only screen and (max-width: 1200px) {
+
+	body {
+		margin-top: 40px;
+	}
+
+	.container {
+		width: 100vw;
+		height: 100vh;
+		padding: 0;
+		margin:0;
+	}
+
+	.jumbotron {
+		padding: 0px 100px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.jumbotron h1 {
+	    font-size: 58px;
+	}
+
+	.jumbotron p {
+	  font-size: 20px;
+	}
+
+	.btn-primary {
+		 font-size: 17px;
+	}
+
+
+
+	.wholeSection {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		width: 100%;
+		height: auto;
+	}
+
+	.row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		/*align-items: center;*/
+		margin-bottom: 10px;
+		padding: 0px 10px 10px 10px;
+		width: 100%;
+	}
+
+	.col-30 {
+		width: 40%;
+	}
+
+	.col-70 {
+		width: 60%;
+		/*padding: 0px 10px; */
+	}
+
+	.col-50 {
+		width: 50%;
+	}
+
+
+	.showcase {
+		width: 1000px;
+		padding: 0px 30px 20px 30px;
+	
+	}
+
+
+	#resources {
+		margin-bottom: 0px;
+	}
+
+	.imgContainer {
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-ms-align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.imgMDPlans {
+		width: 90%;
+		margin-left: 30px;
+		border-radius: 10px;
+		-webkit-box-shadow: 8px 8px 10px #aaaaaa;
+		        box-shadow: 8px 8px 10px #aaaaaa;
+		vertical-align: middle;
+		border: 0px;
+	}
+
+
+	.imgMDPlans2 {
+		width: 80%;
+		margin-left: 30px;
+		border-radius: 10px;
+		-webkit-box-shadow: 8px 8px 10px #aaaaaa;
+		        box-shadow: 8px 8px 10px #aaaaaa;
+		vertical-align: middle;
+		border: 0px;
+	}
+
+	h2 a i {
+		font-size: 25px;
+	}
+
+	#resourcesImg {
+		width: 50%;
+		margin-top: 10px;
+		border-radius: 10px;
+	}
+
+	#seminarsImg {
+		width: 28%;
+		margin-top: 20px;
+		margin-bottom: 3.25%;
+		border-radius: 10px;
+	}
+}
+
+
 /*  --  - --  --  FOOTER -- - - - -- -  -- */
 
 
@@ -948,7 +1105,9 @@ input:focus, textarea:focus {
 	  background-blend-mode: lighten;
 	      background-color: rgba(219, 219, 219, 0.5);
 	      background-color: rgba(44, 108, 204, 0.1);
-
+	width: 100vw;
+	display: flex;
+	justify-content: center;
 }
 
 .contactFooterContainer {
@@ -964,8 +1123,8 @@ input:focus, textarea:focus {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	width: 75%;
-	height: 100%;
+	width: 70%;
+	
 }
 
 .contactInfo {
@@ -1091,40 +1250,11 @@ footer{
 /*  - - - --- - -- - -- - - - - - Responsive Design --- - - - - - - - - - - - - - -- - */
 
 
-@media only screen and (max-width: 1024px) {
-
-	.container {
-		width: 900px;
-	}
-
-	.navbar {
-
-		font-size: 15px;
-	}
-
-	li a {
-		padding: 0;
-	}
-
-	.contactFooterContainer {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-	}
+@media only screen and (max-width: 1200px) {
 
 	form {
-		width: 300px;
+		width: 310px;
 	}
 
-	.contactInfo {
-		width: 300px;
-		padding: 15px;
-	}
 
 }
