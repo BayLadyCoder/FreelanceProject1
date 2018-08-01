@@ -858,7 +858,7 @@ h2 a i {
 }
 
 
-/*  - - - --- - -- - -- - - - - -NavBar Responsive Design --- - - - - - - - - - - - - - -- - */
+/*  - - - --- - -- - -- - - - - -Main Content Responsive Design --- - - - - - - - - - - - - - -- - */
 
 @media only screen and (max-width: 1200px) {
 
@@ -893,56 +893,14 @@ h2 a i {
 	}
 
 
-
-	.wholeSection {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		width: 100%;
-		height: auto;
-	}
-
 	.row {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		/*align-items: center;*/
-		margin-bottom: 10px;
 		padding: 0px 10px 10px 10px;
-		width: 100%;
-	}
-
-	.col-30 {
-		width: 40%;
-	}
-
-	.col-70 {
-		width: 60%;
-		/*padding: 0px 10px; */
-	}
-
-	.col-50 {
-		width: 50%;
 	}
 
 
 	.showcase {
 		width: 1000px;
 		padding: 0px 30px 20px 30px;
-	
 	}
 
 
@@ -952,59 +910,11 @@ h2 a i {
 
 	.imgContainer {
 		width: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-ms-align-items: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-	}
-
-	.imgMDPlans {
-		width: 90%;
-		margin-left: 30px;
-		border-radius: 10px;
-		-webkit-box-shadow: 8px 8px 10px #aaaaaa;
-		        box-shadow: 8px 8px 10px #aaaaaa;
-		vertical-align: middle;
-		border: 0px;
-	}
-
-
-	.imgMDPlans2 {
-		width: 80%;
-		margin-left: 30px;
-		border-radius: 10px;
-		-webkit-box-shadow: 8px 8px 10px #aaaaaa;
-		        box-shadow: 8px 8px 10px #aaaaaa;
-		vertical-align: middle;
-		border: 0px;
-	}
-
-	h2 a i {
-		font-size: 25px;
-	}
-
-	#resourcesImg {
-		width: 50%;
-		margin-top: 10px;
-		border-radius: 10px;
-	}
-
-	#seminarsImg {
-		width: 28%;
-		margin-top: 20px;
-		margin-bottom: 3.25%;
-		border-radius: 10px;
 	}
 }
 
 
-/*  --  - --  --  FOOTER -- - - - -- -  -- */
+/*  -- - - - -- -- - - - -- - -- --  FOOTER -- - - - -- -  -- -- - - - -- -  -- */
 
 
 .col-50 {
@@ -1024,8 +934,6 @@ form {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	/*align-items: center;*/
-
 }
 
 .formContainer {
@@ -1108,6 +1016,7 @@ input:focus, textarea:focus {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .contactFooterContainer {
@@ -1247,7 +1156,7 @@ footer{
 
 
 
-/*  - - - --- - -- - -- - - - - - Responsive Design --- - - - - - - - - - - - - - -- - */
+/*  - - - --- - -- - -- - - - - - FOOTER Responsive Design --- - - - - - - - - - - - - - -- - */
 
 
 @media only screen and (max-width: 1200px) {
