@@ -582,7 +582,6 @@ h2 a:hover {
 
 .tenTypes:hover {
 	font-size: 20px;
-	/*background-color: #fff;*/
 	text-decoration: underline;
 }
 
@@ -694,8 +693,6 @@ p{
 
 .mainContent {
 	padding: 10px 50px;
-	/*display: flex;*/
-	/*justify-content: center;*/
 }
 
 hr {
@@ -710,6 +707,7 @@ hr {
 	width: 900px;
 	padding: 10px 15px 30px 15px;
 	background-color: rgba(226, 226, 226, 0.2);
+	align-self: center;
 }
 
 
@@ -727,7 +725,14 @@ hr {
 }
 
 #showcase {
-	margin: 10px 0px;
+	/*margin: 10px 0px;*/
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
 }
 
 .showcase-btn {
@@ -779,13 +784,214 @@ hr {
 	margin-bottom: 15px;
 }
 
+/*  - - - --- - -- - -- - - - - -Main Content Responsive Design --- - - - - - - - - - - - - - -- - */
 
-/*  --  - --  --  FOOTER -- - - - -- -  -- */
+@media only screen and (max-width: 1000px) {
+
+	#contentContainer {
+		width: 85%;
+		align-self: center;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-top: 5px;
+	}
+
+	.tenTypes {
+		font-size: 17px;
+	}
+
+	.tenTypes:hover {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	p i {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.mainContent {
+		padding: 10px 40px;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+
+	.mainContent {
+		padding: 10px 30px;
+	}
+
+	.tenTypeTextBox {
+		padding: 15px 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	h4 {
+		font-size: 15px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	p i {
+		font-size: 10px;
+	}
+
+	.tenTypes {
+		font-size: 16px;
+	}
+
+	.tenTypes:hover {
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.mainContent {
+		padding: 10px 20px;
+	}
+	
+	.tenTypeTextBox {
+		padding: 10px 25px;
+	}
+	
+
+	h2 {
+		font-size: 18px;
+	}
+
+	h3 {
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+
+	.tenTypes {
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	.tenTypes:hover {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#contentContainer {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.mainContent {
+		padding: 5px 15px;
+	}
+
+	
+	.tenTypeTextBox {
+		padding: 10px 20px;
+	}
+
+	h2 {
+		font-size: 15px;
+		margin-top: 5px;
+	}
+
+	h3 {
+		font-size: 11px;
+	}
+
+	h4 {
+		font-size: 13px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	p i {
+		font-size: 8px;
+	}
+
+	.tenTypes {
+		font-size: 12px;
+		margin-bottom: 2px;
+		text-indent: 0px;
+	}
+
+	.tenTypes:hover {
+		font-size: 13px;
+	}
+}
+
+
+/*  -- - - - -- -- - - - -- - -- --  FOOTER -- - - - -- -  -- -- - - - -- -  -- */
 
 
 .col-50 {
 	width: 50%;
 }
+
+.contactContainer {
+	margin-top: 10px;
+	padding: 20px 0px;
+		  background-blend-mode: lighten;
+		      background-color: rgba(219, 219, 219, 0.5);
+		      background-color: rgba(44, 108, 204, 0.1);
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.contactFooterContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 70%;
+	
+}
+
+
+.formContainer {
+	width: 100%;
+	height: 100%;
+}
+
 form {
 	height: 200px;
 	width: 350px;
@@ -800,23 +1006,9 @@ form {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	/*align-items: center;*/
-
 }
 
-.eachContactInfo {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
 
-.formContainer {
-	width: 100%;
-	height: 100%;
-}
 
 input, textarea {
 	border: #abc3e8 solid 1px !important;
@@ -843,26 +1035,27 @@ input:focus, textarea:focus {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	   
+
 	    height: 34px;
-	    padding: 6px 10px;
+	    padding: 6px 12px;
 	    font-size: 14px;
 	    line-height: 1.42857143;
-	
+
 	    background-color: #fff;
 	    background-image: none;
-	   
+
 	    border-radius: 4px;
-	
-	        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-	
-	                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+	        /*box-shadow: inset 0 1px 1px rgba(0,0,0,.075);*/
 	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 	    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 }
+
+
+
 
 .btn-submit {
 		background-color: rgba(44, 108, 204, 0.9);
@@ -884,30 +1077,8 @@ input:focus, textarea:focus {
 		font-size: 17px;
 }
 
-#contact {
-	padding: 20px 0px;
-	  background-blend-mode: lighten;
-	      background-color: rgba(219, 219, 219, 0.5);
-	      background-color: rgba(44, 108, 204, 0.1);
 
-}
 
-.contactFooterContainer {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	width: 75%;
-	height: 100%;
-}
 
 .contactInfo {
 	display: -webkit-box;
@@ -926,36 +1097,32 @@ input:focus, textarea:focus {
 	background-color: #878787;
 	background-color: rgba(44, 108, 204, 0.9);
 	width: 600px;
+	/*height: 250px;*/
 	color: #fff;
 	border-radius: 20px;
 	padding: 30px;
 
 }
 
-.contactInfo p {
-	-ms-flex-item-align: center;
-	    -ms-grid-row-align: center;
-	    align-self: center;
-	padding-left: 0px;
-	margin: 0px;
-	width: 100%;
-}
 
-
-.contactInfo h3 {
+#h3Contact {
 	margin-top: 0px;
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 	color: #fff;
-	font-size: 19px;
-	font-weight: 700;
 }
 
-#contact p {
+.contactContainer p {
 	color: #fff;
-	margin-bottom: 12px;
+	margin-bottom: 15px;
 	font-size: 15px;
 	font-family:Poppins;
 	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
 }
 
 textarea.form-control {
@@ -969,6 +1136,8 @@ textarea.form-control {
 i {
 	font-size: 18px;
 }
+
+
 
 #contactName {
 	width: 80%;
@@ -1033,5 +1202,112 @@ footer{
 
 #copyrightText {
 	color: #9d9fa0;
-		margin: 0px;
+	margin: 0px;
+}
+
+
+
+/*  - - - --- - -- - -- - - - - - FOOTER Responsive Design --- - - - - - - - - - - - - - -- - */
+
+
+@media only screen and (max-width: 1200px) {
+
+	form {
+		width: 310px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.flexColumn {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.formContainer {
+		align-self: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0px;
+	}
+
+	form {
+		height: 250px;
+		width: 60%;
+	}
+
+	.contactInfo {
+		width: 60%;
+	}
+
+	.contactContainer p {
+		font-size: 15px;
+	}
+
+}
+
+
+@media only screen and (max-width: 780px) {
+
+	.formContainer {
+		margin: 10px 0px;
+	}
+
+	form {
+		height: 200px;
+		width: 70%;
+	}
+
+	.contactInfo {
+		width: 70%;
+		padding: 20px;
+	}
+
+	.contactContainer p {
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 620px) {
+	form {
+		height: 200px;
+		width: 100%;
+	}
+
+	.contactInfo {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+
+	.form-control, #copyrightText {
+		font-size: 11px;
+	}
+
+	.btn-submit {
+		font-size: 13px;
+	}
+
+	.contactInfo {
+		padding: 10px;
+	} 
+
+	#h3Contact {
+		font-size: 14px;
+	}
+
+	.contactContainer p, .contactContainer i {
+		font-size: 11px;
+	}
+
+
 }
