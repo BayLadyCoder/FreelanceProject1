@@ -66,7 +66,7 @@ nav p a{
 	        align-items: center;
 	font-family:Poppins;
 	font-weight: 400;
-  	font-size: 18px;
+  	font-size: 20px;
 	height: 100%;
 }
 
@@ -111,8 +111,6 @@ nav p a{
 nav ul li  {
 	list-style: none;
 	height: 100%;
-	/*display: flex;
-	justify-content: center;*/
 }
 
 
@@ -121,8 +119,15 @@ nav ul li a {
 	font-family:Poppins;
 	font-size: 16px;
 	color: #fff;
-	padding: 14px  20px;
+	padding: 14px 15px;
 	text-decoration: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 nav ul li a:hover{
@@ -193,17 +198,7 @@ nav ul li a i {
 }
 
 
-.container {
-	width: 1170px;
-	padding: 0px 15px;
-	margin: 0 auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
+
 
 
 .toggle {
@@ -233,7 +228,11 @@ nav ul li a i {
 	 	padding: 0% 5%;
 	 }
 
-	nav p a, nav ul li a, nav ul li ul li a{
+	 nav p a {
+	 	font-size: 18px;
+	 }
+
+	nav ul li a, nav ul li ul li a{
 	  	font-size: 15px;
 		height: 100%;
 	}
@@ -283,11 +282,6 @@ nav ul li a i {
 	.navTopContainer {
 	 	padding: 0% 2%;
 	 }
-	
-	nav {
-		height: 43px;
-	}
-	 
 
 	 nav ul li a {
 		padding: 10px 14px;
@@ -319,7 +313,7 @@ nav ul li a i {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
 
 	.toggle {
 		display: -webkit-box;
@@ -355,7 +349,7 @@ nav ul li a i {
 		        align-items: center;
 		font-family:Poppins;
 		font-weight: 400;
-	  	font-size: 22px;
+	  	font-size: 18px;
 		height: 100%;
 	}
 
@@ -394,7 +388,7 @@ nav ul li a i {
 
 
 	nav ul li a {
-		font-size: 20px;
+		font-size: 17px;
 		background-color: #2c6ccc;
 		/*width: 100%;*/
 		text-align: center;
@@ -473,7 +467,7 @@ nav ul li a i {
 	}
 
 	nav ul li ul li a{
-		font-size: 19px;
+		font-size: 15px;
 		text-align: left;
 	}
 
@@ -487,7 +481,7 @@ nav ul li a i {
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
 
 	
 	.toggle a {
@@ -505,14 +499,16 @@ nav ul li a i {
 	}
 
 	nav ul li a {
-		font-size: 18px;	
+		font-size: 16px;	
 	}
 
 
 	nav ul li ul li a{
-		font-size: 16px;
+		font-size: 13px;
 	}
+
 }
+
 
 /* - - - - - - - - -- - Main Content - -- -- - - - - - -- */
 
@@ -786,14 +782,14 @@ hr {
 
 /*  - - - --- - -- - -- - - - - -Main Content Responsive Design --- - - - - - - - - - - - - - -- - */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 
 	#contentContainer {
 		width: 85%;
 		align-self: center;
 	}
 
-	h2 {
+	div h2 {
 		font-size: 25px;
 	}
 
@@ -825,7 +821,7 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
 
 	.mainContent {
 		padding: 10px 30px;
@@ -835,7 +831,7 @@ hr {
 		padding: 15px 30px;
 	}
 
-	h2 {
+	div h2 {
 		font-size: 20px;
 	}
 
@@ -851,6 +847,10 @@ hr {
 		font-size: 14px;
 	}
 
+	.smallText {
+		font-size: 13px;
+	}
+
 	p i {
 		font-size: 10px;
 	}
@@ -862,6 +862,8 @@ hr {
 	.tenTypes:hover {
 		font-size: 17px;
 	}
+
+	
 }
 
 @media only screen and (max-width: 600px) {
@@ -875,7 +877,7 @@ hr {
 	}
 	
 
-	h2 {
+	div h2 {
 		font-size: 18px;
 	}
 
@@ -890,6 +892,10 @@ hr {
 
 	p {
 		font-size: 13px;
+	}
+
+	.smallText {
+		font-size: 12px;
 	}
 
 	.tenTypes {
@@ -917,7 +923,7 @@ hr {
 		padding: 10px 20px;
 	}
 
-	h2 {
+	div h2 {
 		font-size: 15px;
 		margin-top: 5px;
 	}
@@ -932,6 +938,10 @@ hr {
 
 	p {
 		font-size: 12px;
+	}
+
+	.smallText {
+		font-size: 11px;
 	}
 
 	p i {
@@ -1123,6 +1133,8 @@ input:focus, textarea:focus {
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	width: 100%;
 }
 
 textarea.form-control {
@@ -1135,6 +1147,10 @@ textarea.form-control {
 
 i {
 	font-size: 18px;
+}
+
+.eachContactInfo {
+	align-self: center;
 }
 
 
