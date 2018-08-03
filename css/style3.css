@@ -11,7 +11,6 @@ margin-top: 60px;
 
 }
 
-
 /*------------------NAVBAR------------------*/
 
 .navTopContainer {
@@ -67,7 +66,7 @@ nav p a{
 	        align-items: center;
 	font-family:Poppins;
 	font-weight: 400;
-  	font-size: 18px;
+  	font-size: 20px;
 	height: 100%;
 }
 
@@ -112,8 +111,6 @@ nav p a{
 nav ul li  {
 	list-style: none;
 	height: 100%;
-	/*display: flex;
-	justify-content: center;*/
 }
 
 
@@ -122,8 +119,15 @@ nav ul li a {
 	font-family:Poppins;
 	font-size: 16px;
 	color: #fff;
-	padding: 14px  20px;
+	padding: 14px 15px;
 	text-decoration: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 nav ul li a:hover{
@@ -194,17 +198,7 @@ nav ul li a i {
 }
 
 
-.container {
-	width: 1170px;
-	padding: 0px 15px;
-	margin: 0 auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
+
 
 
 .toggle {
@@ -234,7 +228,11 @@ nav ul li a i {
 	 	padding: 0% 5%;
 	 }
 
-	nav p a, nav ul li a, nav ul li ul li a{
+	 nav p a {
+	 	font-size: 18px;
+	 }
+
+	nav ul li a, nav ul li ul li a{
 	  	font-size: 15px;
 		height: 100%;
 	}
@@ -284,11 +282,6 @@ nav ul li a i {
 	.navTopContainer {
 	 	padding: 0% 2%;
 	 }
-	
-	nav {
-		height: 43px;
-	}
-	 
 
 	 nav ul li a {
 		padding: 10px 14px;
@@ -320,7 +313,7 @@ nav ul li a i {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
 
 	.toggle {
 		display: -webkit-box;
@@ -356,7 +349,7 @@ nav ul li a i {
 		        align-items: center;
 		font-family:Poppins;
 		font-weight: 400;
-	  	font-size: 22px;
+	  	font-size: 18px;
 		height: 100%;
 	}
 
@@ -395,7 +388,7 @@ nav ul li a i {
 
 
 	nav ul li a {
-		font-size: 20px;
+		font-size: 17px;
 		background-color: #2c6ccc;
 		/*width: 100%;*/
 		text-align: center;
@@ -474,7 +467,7 @@ nav ul li a i {
 	}
 
 	nav ul li ul li a{
-		font-size: 19px;
+		font-size: 15px;
 		text-align: left;
 	}
 
@@ -488,7 +481,7 @@ nav ul li a i {
 	}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
 
 	
 	.toggle a {
@@ -506,14 +499,16 @@ nav ul li a i {
 	}
 
 	nav ul li a {
-		font-size: 18px;	
+		font-size: 16px;	
 	}
 
 
 	nav ul li ul li a{
-		font-size: 16px;
+		font-size: 13px;
 	}
+
 }
+
 
 /*- - - - --  - - --  -- Main Content -- - -- - - -- - -*/
 
@@ -650,6 +645,8 @@ hr {
 
 #showcase {
 	margin: 10px 0px;
+	display: flex;
+	justify-content: center;
 }
 
 .showcase-btn {
@@ -700,6 +697,7 @@ hr {
 	        align-items: center;
 	margin-bottom: 15px;
 }
+
 
 
 
@@ -960,6 +958,120 @@ p #copyrightText {
 }
 
 
+/*  - - - --- - -- - -- - - - - -Main Content Responsive Design --- - - - - - - - - - - - - - -- - */
+
+@media only screen and (max-width: 1024px) {
+	#showcase {
+		width: 90%;
+		padding: 0px 15px;
+		margin: 0 auto;
+
+	}
+
+	.container {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	#contactUs {
+		margin-bottom: 0px;
+		font-size: 28px;
+	}
+	i {
+		font-size: 15px;
+		
+	}
+
+	#contactName2, #contactPhone2, #contactEmail2, #contactMessage2 {
+		width: 80%;
+	}
+
+	.btn-submit {
+		font-size: 14px;
+	}
+
+	.btn-submit:hover {
+		font-size: 15px;
+	}
+
+	.mainContent {
+		padding: 20px 40px;
+	}
+
+
+}
+
+@media only screen and (max-width: 550px) {
+	.mainContent {
+		padding: 10px 20px;
+	}
+
+	#contactUs {
+		font-size: 23px;
+	}
+	i {
+		font-size: 13px;
+		
+	}
+
+	#contactName2, #contactPhone2, #contactEmail2, #contactMessage2 {
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+	.btn-submit {
+		font-size: 12px;
+		width: 40%
+	}
+
+	.btn-submit:hover {
+		font-size: 13px;
+	}
+
+	.form-control {
+		padding: 5px 8px;
+		color: #2c6ccc;
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		   
+		    height: 30px;
+		    padding: 6px 12px;
+		    font-size: 13px;
+		    line-height: 1.42857143;
+	}
+	#contentContainer {
+	    
+	    padding: 10px 20px; 
+	}
+
+
+	#contactPageForm {
+		justify-content: flex-start;
+		height: auto;
+	}
+
+}
+
+@media only screen and (max-width: 550px) {
+
+	#showcase {
+		width: 95%;
+	}
+
+	.mainContent {
+		padding: 10px 15px;
+	}
+
+	#contactUs {
+		font-size: 19px;
+	}
+}
+
 
 /* ------------------------- footer  ---------------------*/
 
@@ -1047,4 +1159,65 @@ footer{
 #copyrightText {
 	color: #9d9fa0;
 	margin: 0;
+}
+
+
+/*  - - - --- - -- - -- - - - - -FOOTER Responsive Design --- - - - - - - - - - - - - - -- - */
+
+@media only screen and (max-width: 700px) {
+	
+	#h3Contact {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+
+	#contact p {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	#copyrightText {
+		font-size: 13px;
+	}
+
+	.contactInfo {
+		width: 60%;
+	}
+
+}
+
+
+@media only screen and (max-width: 550px) {
+	
+	#h3Contact {
+		margin-bottom: 10px;
+		font-size: 17px;
+	}
+
+	#contact p {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	.contactInfo {
+		width: 75%;
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+	
+	#h3Contact {
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+
+	#contact p {
+		margin-bottom: 8px;
+		font-size: 13px;
+	}
+
+	.contactInfo {
+		width: 80%;
+	}
 }

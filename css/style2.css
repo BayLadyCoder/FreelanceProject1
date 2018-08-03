@@ -813,6 +813,10 @@ hr {
 	p i {
 		font-size: 13px;
 	}
+
+	.resourcesLink:hover {
+		font-size: 21px;
+	}
 }
 
 @media only screen and (max-width: 850px) {
@@ -863,6 +867,9 @@ hr {
 		font-size: 17px;
 	}
 
+	.resourcesLink:hover {
+		font-size: 17px;
+	}
 	
 }
 
@@ -906,6 +913,10 @@ hr {
 	.tenTypes:hover {
 		font-size: 16px;
 	}
+
+	.resourcesLink:hover {
+		font-size: 15px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -929,11 +940,11 @@ hr {
 	}
 
 	h3 {
-		font-size: 11px;
+		font-size: 13px;
 	}
 
 	h4 {
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	p {
@@ -956,6 +967,10 @@ hr {
 
 	.tenTypes:hover {
 		font-size: 13px;
+	}
+
+	.resourcesLink:hover {
+		font-size: 12px;
 	}
 }
 
@@ -1134,6 +1149,7 @@ input:focus, textarea:focus {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	align-items: center;
 	width: 100%;
 }
 
@@ -1262,6 +1278,10 @@ footer{
 		width: 60%;
 	}
 
+	.contactInfo p i {
+		font-size: 13px;
+	}
+
 	.contactContainer p {
 		font-size: 15px;
 	}
@@ -1292,25 +1312,69 @@ footer{
 }
 
 @media only screen and (max-width: 620px) {
+	form {	
+		width: 90%;
+	}
+
+	.form-control {
+	    padding: 5px 8px;
+	    color: #2c6ccc;
+	    width: 90%;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    height: 30px;
+	    padding: 4px 8px;
+	    font-size: 10px;
+	}
+
+	.grouping i {
+		font-size: 14px;
+	}
+
+	.contactInfo {
+		width: 90%;
+		padding: 20px;
+	}
+
+	.contactInfo h3 {
+		font-size: 15px;
+	}
+
+	.btn-submit {
+		font-size: 12px;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+
 	form {
-		height: 200px;
 		width: 100%;
+		height: auto;
 	}
 
 	.contactInfo {
 		width: 100%;
-		padding: 20px;
 	}
-}
 
-@media only screen and (max-width: 430px) {
+	.contactContainer p {
+		font-size: 11px;
+		margin-bottom: 10px
+	}
 
 	.form-control, #copyrightText {
 		font-size: 11px;
+		margin: 0;
 	}
 
-	.btn-submit {
-		font-size: 13px;
+	textarea.form-control {
+		height: 70px;
+		margin: 0;
+	}
+
+	.btn-submit, .grouping i, .width100 i {
+		font-size: 11px;
 	}
 
 	.contactInfo {
@@ -1318,12 +1382,29 @@ footer{
 	} 
 
 	#h3Contact {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
-	.contactContainer p, .contactContainer i {
+	.contactInfo p i {
 		font-size: 11px;
 	}
 
+	.form-group {
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+
+	#contactPhone, #contactEmail, #contactName, #contactMessage {
+		margin-bottom: 5px;
+	}
+
+	.grouping {
+		width: 100%;
+	}
+
+	#contactName, #contactPhone {
+		width: 90%;
+	}
 
 }
