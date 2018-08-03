@@ -122,7 +122,14 @@ When shopping for Medicare Advantage plans “MA” Part C, you need to verify i
           <!-- <div class="container"> -->
             <div class="contactFooterContainer flexColumn">
               <div class="formContainer">
-                <form class="info-left">
+                <form class="info-left" action="./php/contact2.php" enctype="multipart/form-data" method="POST">
+
+                                  <input type="hidden" name="sendtoemail" value="info@healthcarebaltimore.com">
+                                  <input type='hidden' name='cgiemail-mailopt' value='sync' />
+                                  
+                                  <input type="hidden" name="subject" value="HealthcareBaltimore.com - Contact Form" />
+                                  <input type="hidden" name="redirect" value="http://www.healthcarebaltimore.com" />
+
                   <div class="form-group">
                     <div class="grouping">
                       <label><i class="fas fa-user"></i> </label>
