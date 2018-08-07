@@ -60,6 +60,12 @@ height: 100vh;
 	padding: 0 10%;
 }
 
+.photoTop {
+	width: 60%;
+	align-self: center;
+	border-radius: 5px;
+}
+
 h1, p, button, span {
 	align-self: center;
 }
@@ -80,10 +86,6 @@ p {
 	text-align: center;
 	line-height: 1.8;
 }
-
-/*.marginBottom {
-	margin-bottom: 50px;
-}*/
 
 .btn-primary {
 	width: 120px;
