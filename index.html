@@ -205,10 +205,9 @@
             <!-- </div> -->
 
           </section>
-</main>
+        </main>
 
         <section class="contactContainer">
-          <!-- <div class="container"> -->
             <div class="contactFooterContainer flexColumn">
               <div class="formContainer">
                 <form class="info-left" action="./php/contact2.php" enctype="multipart/form-data" method="POST">
@@ -222,26 +221,25 @@
                   <div class="form-group">
                     <div class="grouping">
                       <label><i class="fas fa-user"></i> </label>
-                      <input id="contactName" class="form-control" type="text" name="" value="" placeholder="Enter Name">
+                      <input id="contactName" class="form-control" type="text" name="name" value="" placeholder="Enter Name" required>
                     </div>
                     <div class="grouping">
                       <label><i class="fas fa-phone"></i> </label>
-                      <input id="contactPhone" class="form-control" type="text" name="" value="" placeholder="Phone Number">
+                      <input id="contactPhone" class="form-control" type="text" name="phone" value="" placeholder="Phone Number" required>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <div class="width100">
                       <label><i class="far fa-envelope"></i> </label>
-                      <input id="contactEmail" class="form-control" type="text" name="" value="" placeholder="Enter Email">
+                      <input id="contactEmail" class="form-control" type="text" name="email" value="" placeholder="Enter Email" required>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <div class="width100">
-                      <!-- <label>Message: </label> -->
                       <label for="message"> <i class="far fa-comment"></i></label>
-                      <textarea id="contactMessage" class="form-control" name="" value="" placeholder="Enter Message"></textarea>
+                      <textarea id="contactMessage" class="form-control" name="message" value="" placeholder="Enter Message" required></textarea>
                     </div>
                   </div>
                   <button class="btn btn-submit">Submit</button>
@@ -255,7 +253,6 @@
                 <p class="eachContactInfo"><i class="far fa-clock"></i> 9:00AM-5:00PM</p>
               </div>
             </div>
-            <!-- </div> -->
           </section>
 
           <footer id="footer">
