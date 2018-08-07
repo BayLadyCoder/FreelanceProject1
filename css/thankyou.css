@@ -8,7 +8,7 @@
 
 
 body {
-margin-top: 100px;
+margin-top: 120px;
 width: 100vw;
 height: 100vh;
 }
@@ -40,14 +40,27 @@ height: 100vh;
 .container {
 	width: 100%;
 	height: 100%;
-	padding: 15% 10%;
+	/*padding: 15% 10%;*/
 	align-self: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-h1, p, button {
+.mainContent {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 70%;
+	padding: 0 10%;
+}
+
+h1, p, button, span {
 	align-self: center;
 }
 
@@ -56,6 +69,7 @@ h1 {
 	margin-bottom: 50px;
 	color: #43c17d;
 	font-family:Roboto;
+	text-align: center;
 }
 
 p {
@@ -63,7 +77,13 @@ p {
 	margin-bottom: 50px;
 	color: #43c17d;
 	font-family:Roboto;
+	text-align: center;
+	line-height: 1.8;
 }
+
+/*.marginBottom {
+	margin-bottom: 50px;
+}*/
 
 .btn-primary {
 	width: 120px;
@@ -99,7 +119,104 @@ p {
 
 /*  - - - --- - -- - -- - - - - - Thank you Responsive Design --- - - - - - - - - - - - - - -- - */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
 
+	h1 {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
 
+	p {
+		font-size: 20px;
+			margin-bottom: 30px;
+	}
+
+	.marginBottom {
+		margin-bottom: 30px;
+	}
+
+	.btn-primary {
+		width: 100px;
+		height: 40px;
+		 border-radius: 15px;
+		 font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	h1 {
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.btn-primary {
+		width: 80px;
+		height: 35px;
+		 border-radius: 12px;
+		 font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+
+	h1 {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.btn-primary {
+		width: 70px;
+		height: 30px;
+		 border-radius: 10px;
+		 font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+
+	h1 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+
+	h1 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	.btn-primary {
+		width: 60px;
+		height: 25px;
+		 font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+
+	h1 {
+		font-size: 18px;	
+	} 
+
+	p {
+		font-size: 11px;
+	}
 }
