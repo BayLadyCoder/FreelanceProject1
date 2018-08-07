@@ -512,6 +512,26 @@ nav ul li a i {
 
 /* - - - - - - - - -- - Main Content - -- -- - - - - - -- */
 
+.photoTop {
+	width: 40%;
+	float: right;
+	margin-left: 20px;
+	/*margin-bottom: 1px;*/
+	border-radius: 5px;
+/*	-webkit-box-shadow: 5px 5px 15px #aaaaaa;
+	        box-shadow: 5px 5px 15px #aaaaaa;*/
+}
+
+.photoTop2 {
+	width: 43%;
+	float: right;
+	margin-left: 20px;
+	/*margin-bottom: 1px;*/
+	border-radius: 5px;
+/*	-webkit-box-shadow: 5px 5px 15px #aaaaaa;
+	        box-shadow: 5px 5px 15px #aaaaaa;*/
+}
+
 h1,h2,h3,h4,h5,h6,a{
   font-family:Poppins;
   color: #444444;
@@ -534,6 +554,10 @@ h3 {
 	font-weight: 500;
 	margin-top: 15px;
     margin-bottom: 5px;
+}
+
+.h3smaller {
+	font-size: 16px;
 }
 
 .h2-blue {
