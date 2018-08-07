@@ -512,6 +512,17 @@ nav ul li a i {
 
 /*- - - - --  - - --  -- Main Content -- - -- - - -- - -*/
 
+.photoTop {
+	width: 60%;
+	align-self: center;
+	/*float: right;*/
+	/*margin-left: 20px;*/
+	/*margin-bottom: 1px;*/
+	border-radius: 5px;
+/*	-webkit-box-shadow: 5px 5px 15px #aaaaaa;
+	        box-shadow: 5px 5px 15px #aaaaaa;*/
+}
+
 h1,h2,h3,h4,h5,h6,a{
   font-family:Poppins;
   color: #444444;

@@ -532,6 +532,11 @@ nav ul li a i {
 	        box-shadow: 5px 5px 15px #aaaaaa;*/
 }
 
+.center {
+	float: none;
+	align-self: center;
+}
+
 h1,h2,h3,h4,h5,h6,a{
   font-family:Poppins;
   color: #444444;
@@ -803,6 +808,16 @@ hr {
 	        align-items: center;
 	margin-bottom: 15px;
 }
+
+/*.showcase-resources {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+
+}*/
 
 /*  - - - --- - -- - -- - - - - -Main Content Responsive Design --- - - - - - - - - - - - - - -- - */
 
