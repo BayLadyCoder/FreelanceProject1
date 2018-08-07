@@ -512,7 +512,7 @@ nav ul li a i {
 
 /* - - - - - - - - -- - Main Content - -- -- - - - - - -- */
 
-.photoTop {
+.photoTop, .photoTopResources {
 	width: 40%;
 	float: right;
 	margin-left: 20px;
@@ -809,15 +809,6 @@ hr {
 	margin-bottom: 15px;
 }
 
-/*.showcase-resources {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-
-}*/
 
 /*  - - - --- - -- - -- - - - - -Main Content Responsive Design --- - - - - - - - - - - - - - -- - */
 
@@ -865,6 +856,10 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+
+
+
+
 
 	.mainContent {
 		padding: 10px 30px;
@@ -914,6 +909,30 @@ hr {
 
 @media only screen and (max-width: 600px) {
 
+	.showcase-one {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.photoTop,.photoTop2 {
+		width: 70%;
+		float: none;
+		margin-left: 0px;
+		align-self: center;
+	}
+
+	.photoTopResources {
+		width: 50%;
+		float: none;
+		margin-left: 0px;
+		align-self: center;
+	}
+
 	.mainContent {
 		padding: 10px 20px;
 	}
@@ -925,15 +944,19 @@ hr {
 
 	div h2 {
 		font-size: 18px;
+		align-self: center;
+		text-align: center;
 	}
 
 	h3 {
 		font-size: 14px;
 		font-weight: 600;
+		text-align: center;
 	}
 
 	h4 {
 		font-size: 14px;
+		text-align: center;
 	}
 
 	p {
@@ -959,6 +982,17 @@ hr {
 }
 
 @media only screen and (max-width: 500px) {
+
+	.photoTop, .photoTop2 {
+		width: 90%;
+		margin-bottom: 5px;
+	}
+
+	.photoTopResources {
+		width: 60%;
+		margin-bottom: 5px;
+	}
+
 	#contentContainer {
 		width: 90%;
 		margin: 0 auto;
